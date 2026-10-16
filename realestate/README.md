@@ -1,16 +1,70 @@
-# React + Vite
+# Urban Nest
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Urban Nest is a real-estate browsing app built with React and Vite. Explore property listings in Lahore, Karachi, and Islamabad, filter by location, property type, price, and bedrooms, and save favorites for later.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse featured homes, apartments, villas, and commercial properties.
+- Search and filter listings, with filter state reflected in the URL.
+- View property details and agent profiles.
+- Save favorite properties; favorites are stored in the browser's local storage.
+- Visit About, Contact, Login, and Sign Up pages.
 
-## React Compiler
+Listings and agent profiles currently come from local project data. The app does not use a backend service.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the Oxlint configuration
+- Node.js and npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Getting started
+
+From this directory, install dependencies and start the development server:
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite in your browser.
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server. |
+| `npm run build` | Create a production build in `dist/`. |
+| `npm run preview` | Preview the production build locally. Run `npm run build` first. |
+| `npm run lint` | Check the project with Oxlint. |
+
+## Routes
+
+| Path | Page |
+| --- | --- |
+| `/` | Home |
+| `/properties` | Property listings and filters |
+| `/properties/:id` | Property details |
+| `/agents` | Agent directory |
+| `/about` | About Urban Nest |
+| `/contact` | Contact |
+| `/login` | Login |
+| `/signup` | Sign up |
+| `/favorites` | Saved properties |
+
+## Tech stack
+
+- React 19
+- Vite
+- React Router
+- Tailwind CSS 4
+- lucide-react icons
+
+## Project structure
+
+```text
+src/
+  assets/       Images and videos
+  components/   Shared interface components
+  context/      Favorites state
+  data/         Local property and agent data
+  pages/        Route-level pages
+```
