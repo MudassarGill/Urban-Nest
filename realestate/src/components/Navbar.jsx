@@ -43,7 +43,7 @@ function Navbar() {
       <div className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-6">
         {/* logo */}
         <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center">
-          <img src={logoImg} alt="Urban Nest" className="h-14 w-auto rounded-2xl text-white" />
+          <img src={logoImg} alt="Urban Nest" className="h-12 w-auto brightness-0 invert" />
         </Link>
 
         {/* desktop links */}
@@ -73,7 +73,7 @@ function Navbar() {
 
           <Link
             to="/login"
-            className="hidden rounded-full bg-gold px-6 py-2.5 font-bold text-navy hover:bg-white md:block"
+            className="hidden rounded-2xl bg-gold px-6 py-2.5 font-bold text-navy hover:bg-white md:block"
           >
             Sign In
           </Link>
