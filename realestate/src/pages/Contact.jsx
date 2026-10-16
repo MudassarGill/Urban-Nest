@@ -43,11 +43,11 @@ function Contact() {
       <section className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16 lg:flex-row">
         <div className="lg:w-80">
           <h2 className="mb-4 font-heading text-2xl font-bold">Get in touch</h2>
-          <p className="mb-2">[YOUR ADDRESS]</p>
-          <p className="mb-2">[YOUR PHONE]</p>
-          <p className="mb-6">[YOUR EMAIL]</p>
+          <p className="mb-2">Lahore Punjab Pakistan</p>
+          <p className="mb-2">mudassarhussain6533@gmail.com</p>
+          <p className="mb-6">+923051565030</p>
           <h3 className="mb-1 font-bold">Office hours</h3>
-          <p>[YOUR OFFICE HOURS]</p>
+          <p>9:00 AM - 10:00 PM</p>
         </div>
 
         <div className="flex-1">

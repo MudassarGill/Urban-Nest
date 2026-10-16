@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { Heart, Menu, X } from "lucide-react";
 import { useFavorites } from "../context/FavoritesContext";
+import logoImg from "../assets/Images/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -43,7 +44,7 @@ function Navbar() {
           onClick={() => setIsOpen(false)}
           className="font-heading text-2xl font-bold"
         >
-          Urban Nest
+          <img src={logoImg} alt="Urban Nest" className="h-10 w-10" />
         </Link>
 
         {/* desktop links */}
