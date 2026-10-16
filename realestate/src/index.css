@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-navy: #12263A;
+  --color-gold: #C8963E;
+  --color-golddark: #8A5F16;
+  --color-cream: #F7F5F0;
+  --color-sand: #E9E4D8;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: #1B2733;
+}
