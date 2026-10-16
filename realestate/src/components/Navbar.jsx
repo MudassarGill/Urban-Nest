@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { Heart, Menu, X } from "lucide-react";
 import { useFavorites } from "../context/FavoritesContext";
-import logoImg from "../assets/Images/logo.png";
+import logoImg from "../assets/images/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -30,7 +30,9 @@ function Navbar() {
   const solid = scrolled || isOpen || pathname !== "/";
 
   const linkClass = ({ isActive }) =>
-    `font-medium transition-colors hover:text-gold ${isActive ? "text-gold" : "text-white"}`;
+    `font-medium transition-colors hover:text-gold ${
+      isActive ? "text-gold" : "text-white"
+    }`;
 
   return (
     <nav
@@ -39,12 +41,9 @@ function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-6">
-        <Link
-          to="/"
-          onClick={() => setIsOpen(false)}
-          className="font-heading text-2xl font-bold"
-        >
-          <img src={logoImg} alt="Urban Nest" className="h-10 w-10" />
+        {/* logo */}
+        <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center">
+          <img src={logoImg} alt="Urban Nest" className="h-14 w-auto rounded-2xl text-white" />
         </Link>
 
         {/* desktop links */}
@@ -61,6 +60,7 @@ function Navbar() {
           ))}
         </div>
 
+        {/* right side: favorites, sign in, hamburger */}
         <div className="flex items-center gap-5">
           <Link to="/favorites" aria-label="Favorites" className="relative">
             <Heart size={24} />

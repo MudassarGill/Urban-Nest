@@ -26,7 +26,7 @@ function Hero() {
         <p className="mb-10 max-w-lg text-lg text-white/90">
           Browse houses, apartments and plots from trusted agents, all in one place.
         </p>
-        <SearchBar />
+        <SearchBar/>
       </div>
     </header>
   );
